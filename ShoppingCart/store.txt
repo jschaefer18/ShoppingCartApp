@@ -1,0 +1,5 @@
+Apple,0.99
+Milk,2.49
+Bread,1.99
+Eggs,3.50
+

@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXCopyFilesBuildPhase section */
+		DB0CA2C42DFB7E990057A103 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DB18F3DC2DF78CA6005D96AD /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -22,9 +31,22 @@
 		DB18F3DE2DF78CA6005D96AD /* ShoppingCart */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ShoppingCart; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		DB0CA2C62DFB7EB20057A103 /* Exceptions for "ShoppingCart" folder in "Copy Files" phase from "ShoppingCart" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = DB0CA2C42DFB7E990057A103 /* CopyFiles */;
+			membershipExceptions = (
+				store.txt,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		DB18F3E02DF78CA6005D96AD /* ShoppingCart */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				DB0CA2C62DFB7EB20057A103 /* Exceptions for "ShoppingCart" folder in "Copy Files" phase from "ShoppingCart" target */,
+			);
 			path = ShoppingCart;
 			sourceTree = "<group>";
 		};
@@ -67,6 +89,7 @@
 				DB18F3DA2DF78CA6005D96AD /* Sources */,
 				DB18F3DB2DF78CA6005D96AD /* Frameworks */,
 				DB18F3DC2DF78CA6005D96AD /* CopyFiles */,
+				DB0CA2C42DFB7E990057A103 /* CopyFiles */,
 			);
 			buildRules = (
 			);

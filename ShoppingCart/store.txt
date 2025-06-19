@@ -2,4 +2,52 @@ Apple,0.99
 Milk,2.49
 Bread,1.99
 Eggs,3.50
+Cheese,4.25
+Banana,0.59
+Orange,0.79
+Chicken,6.99
+Beef,8.99
+Pork,7.49
+Yogurt,1.25
+Butter,3.29
+Rice,2.99
+Pasta,1.89
+Tomato,0.69
+Lettuce,1.49
+Onion,0.89
+Garlic,0.50
+Carrot,0.79
+Potato,0.99
+Cereal,3.99
+Oatmeal,2.59
+Coffee,6.49
+Tea,3.25
+Juice,3.99
+Water,0.99
+Soda,1.50
+Chips,2.49
+Crackers,2.29
+Cookies,2.99
+Ice Cream,4.99
+Frozen Pizza,5.49
+Fish,9.99
+Shrimp,11.99
+Ketchup,2.79
+Mustard,2.29
+Mayonnaise,3.19
+Peanut Butter,2.99
+Jelly,2.59
+Toilet Paper,6.99
+Paper Towels,5.99
+Laundry Detergent,9.49
+Dish Soap,2.39
+Shampoo,4.89
+Toothpaste,3.49
+Hand Soap,1.89
+Deodorant,4.19
+Flour,2.49
+Sugar,1.99
+Salt,0.89
+Pepper,1.19
+
 

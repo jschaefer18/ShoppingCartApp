@@ -1,14 +1,8 @@
 ====== Receipt ======
-Apple x1 @ $0.99 = $0.99
-Chips x1 @ $2.49 = $2.49
-Ketchup x1 @ $2.79 = $2.79
 Pepper x1 @ $1.19 = $1.19
-Salt x1 @ $0.89 = $0.89
-Soda x1 @ $1.50 = $1.50
-Sugar x1 @ $1.99 = $1.99
 ---------------------
-Total:   $11.84
-Paid:    $12.00
-Change:  $0.16
+Total:   $1.19
+Paid:    $2.00
+Change:  $0.81
 =====================
 Thank you for shopping!

@@ -28,9 +28,6 @@
 using namespace std;
 
 
-#include <unistd.h>
-#include <limits.h>
-
 
 
 // This function is a for loop that prints out all of the current products of the store.
@@ -98,6 +95,31 @@ void addToCart(const std::vector<Product>& store, std::map<std::string, int>& ca
     }
 }
 
+void deleteFromCart(std::map<std::string, int>& cart) {
+    if (cart.empty()) {
+        std::cout << "\nYour cart is already empty.\n";
+        return;
+    }
+
+    std::string itemToDelete;
+    std::cin.ignore();  // clear leftover newline
+
+    std::cout << "\nEnter the name of the item to delete from cart: ";
+    std::getline(std::cin, itemToDelete);
+
+    auto it = cart.find(itemToDelete);
+    if (it != cart.end()) {
+        if (it->second > 1) {
+            it->second--;
+            std::cout << itemToDelete << " quantity decreased by 1.\n";
+        } else {
+            cart.erase(it);
+            std::cout << itemToDelete << " removed from cart.\n";
+        }
+    } else {
+        std::cout << "Item not found in cart.\n";
+    }
+}
 
 // This is the view cart function
 void viewCart(const std::map<std::string, int>& cart, const std::vector<Product>& store) {
@@ -183,6 +205,9 @@ void saveReceipt(const std::map<std::string, int>& cart,
 }
 
 
+
+
+
 void checkout(std::map<std::string, int>& cart, const std::vector<Product>& store) {
     if (cart.empty()) {
         std::cout << "\nYour cart is empty. Nothing to checkout.\n";
@@ -234,7 +259,7 @@ void checkout(std::map<std::string, int>& cart, const std::vector<Product>& stor
 }
 
 
-
+// View cart\n checkout(cart, store);
 // This is the main menu function that will call other functions inside it.
 int main() {
     vector<Product> store;
@@ -244,9 +269,10 @@ int main() {
     while(true){
         cout << "1: View store items\n"
              << "2: Add item to cart\n"
-             << "3: View cart\n"
-             << "4: Checkout\n"
-             << "5: Exit" << endl;
+             << "3: Delete item from cart\n"
+             << "4: View cart\n"
+             << "5: Checkout\n"
+             << "6: Exit" << endl;
         int choice;
         cin >> choice;
         if (choice == 1){
@@ -256,12 +282,15 @@ int main() {
             addToCart(store, cart);
         }
         if (choice == 3){
-            viewCart(cart, store);
+            deleteFromCart(cart);
         }
         if (choice == 4){
-            checkout(cart, store);
+            viewCart(cart,store);
         }
         if (choice == 5){
+            checkout(cart,store);
+        }
+        if (choice == 6){
             break;
         }
     }
